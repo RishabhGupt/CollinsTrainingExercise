@@ -1,0 +1,18 @@
+"Create a spring application using Maven with group id=com.rc.training, artifact id= springdemoxml. Use xml configuration.
+Employee class contains an id and other details like name, salary, designation etc.
+Define the following beans:
+EmployeeRepository, EmployeeService
+EmployeeRepository contains a repository of Employee objects.(stored as a HashMap). Defines below methods:
+	getEmployees() -> Returns all employees
+	addEmployee(Employee emp) ->Add single employee to the repository
+	addEmployees(Employee... emps) ->Add multiple employees to repository
+	clearRepository() -> Deletes all employees from the repository
+EmployeeService uses EmployeeRepository. Defines below methods:
+	logEmployees->sys out statements to display all employees
+	validateEmployee(Employee emp)->Print error statements like Duplicate employee id, Negative employee id etc...
+	addEmployee(Employee emp)-> Add employee to the repository after validating the employee
+Repository should be initialized with some default data on app start up and cleared before the app context is destroyed.
+The error messages should be defined in a property file, and retrieved from there while printing the validation errors.
+Initialize the application context and demo the behaviour of the application for different scenarios.
+
+Repeat the above in a new spring project with group id=com.rc.training, artifact id= springdemoannotation. Use annotation based configuration"
